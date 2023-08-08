@@ -141,6 +141,12 @@ class CarInterface(CarInterfaceBase):
       ret.wheelbase = 2.756
       ret.steerRatio = 16.
       tire_stiffness_factor = 0.385
+    elif candidate == CAR.TUCSON_TL:
+      ret.mass = 1594. + STD_CARGO_KG #1730
+      ret.wheelbase = 2.67
+      tire_stiffness_factor = 0.7
+      ret.centerToFront = ret.wheelbase * 0.4
+      ret.steerRatio = 14.00
     elif candidate == CAR.SANTA_CRUZ_1ST_GEN:
       ret.mass = 1870. + STD_CARGO_KG  # weight from Limited trim - the only supported trim
       ret.wheelbase = 3.000
