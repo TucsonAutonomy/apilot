@@ -104,6 +104,7 @@ class CAR:
   GRANDEUR_IG_HEV = "HYUNDAI GRANDEUR IG HEV 2019"
   GRANDEUR_IG_FL = "HYUNDAI GRANDEUR IG FL 2020"
   GRANDEUR_IG_FL_HEV = "HYUNDAI GRANDEUR IG FL HEV 2020"
+  TUCSON_TL  = "HYUNDAI TUCSON TL 1.7"
 
   GENESIS_EQ900 = "GENESIS EQ900 2017"
   GENESIS_EQ900_L = "GENESIS EQ900 LIMOUSINE"
@@ -192,6 +193,7 @@ CAR_INFO: Dict[str, Optional[Union[HyundaiCarInfo, List[HyundaiCarInfo]]]] = {
   CAR.TUCSON_HYBRID_4TH_GEN: HyundaiCarInfo("Hyundai Tucson Hybrid 2022", "All", harness=Harness.hyundai_n),
   CAR.SANTA_CRUZ_1ST_GEN: HyundaiCarInfo("Hyundai Santa Cruz 2021-22", "Smart Cruise Control (SCC)", harness=Harness.hyundai_n),
   CAR.NEXO: HyundaiCarInfo("Hyundai NEXO", "All", harness=Harness.hyundai_n),
+  CAR.TUCSON_TL: HyundaiCarInfo("Hyundai Tucson TL 1.7", harness=Harness.hyundai_l),
 
   # Kia
   CAR.KIA_FORTE: HyundaiCarInfo("Kia Forte 2019-21", harness=Harness.hyundai_g),
@@ -388,7 +390,19 @@ FINGERPRINTS = {
   }],
   CAR.KIA_SOUL_EV_SK3: [{
     127: 8, 304: 8, 320: 8, 339: 8, 352: 8, 356: 4, 544: 8, 546: 8, 548: 8, 549: 8, 593: 8, 688: 6, 832: 8, 881: 8, 882: 8, 897: 8, 902: 8, 903: 8, 905: 8, 909: 8, 913: 8, 916: 8, 1040: 8, 1042: 8, 1056: 8, 1057: 8, 1078: 4, 1136: 8, 1151: 6, 1155: 8, 1156: 8, 1157: 4, 1162: 8, 1164: 8, 1168: 7, 1173: 8, 1186: 2, 1191: 2, 1193: 8, 1225: 8, 1227: 8, 1265: 4, 1280: 1, 1287: 4, 1290: 8, 1291: 8, 1292: 8, 1294: 8, 1312: 8, 1322: 8, 1342: 6, 1345: 8, 1348: 8, 1355: 8, 1363: 8, 1369: 8, 1378: 8, 1379: 8, 1407: 8, 1419: 8, 1426: 8, 1427: 6, 1429: 8, 1430: 8, 1456: 4, 1470: 8, 1473: 8, 1507: 8, 1535: 8
-  }],  
+  }],
+  CAR.TUCSON_TL: [{
+    64: 8, 66: 8, 67: 8, 68: 8, 127: 8, 273: 8, 274: 8, 275: 8, 339: 8, 356: 4, 399: 8, 512: 6, 544: 8, 608: 8, 790: 8, 809: 8, 832: 8, 899: 8, 902: 8, 903: 6, 916: 8, 1040: 8, 1056: 8, 1057: 8, 1078: 4, 1151: 6, 1168: 7, 1170: 8, 1265: 4, 1280: 1, 1282: 4, 1287: 4, 1290: 8, 1292: 8, 1312: 8, 1314: 8, 1322: 8, 1342: 6, 1345: 8, 1348: 8, 1349: 8, 1351: 8, 1353: 8, 1363: 8, 1365: 8, 1366: 8, 1367: 8, 1369: 8, 1407: 8, 1419: 8, 1427: 6, 1440: 8, 1456: 4, 1472: 8, 1491: 8, 1492: 8, 1530: 8, 1532: 5
+    },
+    {
+    64: 8, 66: 8, 67: 8, 68: 8, 127: 8, 273: 8, 274: 8, 275: 8, 339: 8, 356: 4, 399: 8, 512: 6, 544: 8, 608: 8, 790: 8, 809: 8, 832: 8, 899: 8, 902: 8, 903: 6, 916: 8, 1040: 8, 1056: 8, 1057: 8, 1078: 4, 1151: 6, 1168: 7, 1170: 8, 1265: 4, 1280: 1, 1282: 4, 1287: 4, 1290: 8, 1292: 8, 1312: 8, 1314: 8, 1322: 8, 1342: 6, 1345: 8, 1348: 8, 1349: 8, 1351: 8, 1353: 8, 1363: 8, 1365: 8, 1366: 8, 1367: 8, 1369: 8, 1407: 8, 1419: 8, 1427: 6, 1440: 8, 1456: 4, 1472: 8, 1491: 8, 1492: 8, 1530: 8, 1532: 5, 2015: 8, 2024: 8, 2025: 8
+    },
+    {
+    64: 8, 66: 8, 67: 8, 68: 8, 127: 8, 128: 8, 129: 8, 273: 8, 274: 8, 275: 8, 339: 8, 354: 3, 356: 4, 399: 8, 512: 6, 544: 8, 608: 8, 790: 8, 809: 8, 832: 8, 899: 8, 902: 8, 903: 6, 916: 8, 1040: 8, 1056: 8, 1057: 8, 1078: 4, 1151: 6, 1168: 7, 1170: 8, 1265: 4, 1280: 1, 1282: 4, 1287: 4, 1290: 8, 1292: 8, 1312: 8, 1314: 8, 1322: 8, 1342: 6, 1345: 8, 1348: 8, 1349: 8, 1351: 8, 1353: 8, 1356: 8, 1363: 8, 1365: 8, 1366: 8, 1367: 8, 1369: 8, 1407: 8, 1419: 8, 1427: 6, 1440: 8, 1456: 4, 1472: 8, 1491: 8, 1492: 8, 1530: 8, 1532: 5, 1990: 8, 1998: 8, 2015: 8, 2016: 8, 2024: 8, 2025: 8
+    },
+    {
+    67: 8, 68: 8, 127: 8, 128: 8, 129: 8, 273: 8, 274: 8, 275: 8, 339: 8, 354: 3, 356: 4, 399: 8, 512: 6, 544: 8, 593: 8, 608: 8, 688: 5, 790: 8, 809: 8, 832: 8, 897: 8, 899: 8, 902: 8, 903: 6, 916: 8, 1040: 8, 1078: 4, 1170: 8, 1265: 4, 1280: 1, 1282: 4, 1287: 4, 1292: 8, 1312: 8, 1314: 8, 1322: 8, 1342: 6, 1345: 8, 1348: 8, 1349: 8, 1351: 8, 1353: 8, 1356: 8, 1363: 8, 1365: 8, 1366: 8, 1367: 8, 1369: 8, 1407: 8, 1427: 6, 1440: 8, 1456: 4, 1472: 8, 1491: 8, 1492: 8, 1530: 8, 1532: 5
+  }],
 }
 
 HYUNDAI_VERSION_REQUEST_LONG = bytes([uds.SERVICE_TYPE.READ_DATA_BY_IDENTIFIER]) + \
@@ -1575,7 +1589,7 @@ CHECKSUM = {
 
 FEATURES = {
   # which message has the gear
-  "use_cluster_gears": {CAR.ELANTRA, CAR.KONA, CAR.GRANDEUR_IG, CAR.GRANDEUR_IG_FL, CAR.K7},
+  "use_cluster_gears": {CAR.ELANTRA, CAR.KONA, CAR.GRANDEUR_IG, CAR.GRANDEUR_IG_FL, CAR.K7, CAR.TUCSON_TL},
   "use_tcu_gears": {CAR.KIA_OPTIMA_G4, CAR.KIA_OPTIMA_G4_FL, CAR.SONATA_LF, CAR.VELOSTER, CAR.TUCSON, CAR.TUCSON_TL_SCC},
   "use_elect_gears": {CAR.KIA_NIRO_EV, CAR.KIA_NIRO_PHEV, CAR.KIA_NIRO_HEV_2021, CAR.KIA_OPTIMA_H, CAR.IONIQ_EV_LTD, CAR.KONA_EV, CAR.IONIQ, CAR.IONIQ_EV_2020, CAR.IONIQ_PHEV, CAR.ELANTRA_HEV_2021, CAR.SONATA_HYBRID, CAR.KONA_HEV, CAR.IONIQ_HEV_2022, CAR.SANTA_FE_HEV_2022, CAR.SANTA_FE_PHEV_2022, CAR.IONIQ_PHEV_2019, CAR.KONA_EV_2022, CAR.GRANDEUR_IG_HEV, CAR.GRANDEUR_IG_FL_HEV, CAR.NEXO, CAR.K7_HEV, CAR.KIA_SOUL_EV_SK3},
 
@@ -1665,6 +1679,7 @@ DBC = {
   CAR.NEXO: dbc_dict('hyundai_kia_generic', 'hyundai_kia_mando_front_radar_generated'),
   CAR.K7: dbc_dict('hyundai_kia_generic', None),
   CAR.K7_HEV: dbc_dict('hyundai_kia_generic', None),
+  CAR.TUCSON_TL: dbc_dict('hyundai_kia_generic', None)
   CAR.GENESIS_GV70_1ST_GEN: dbc_dict('hyundai_canfd', None),
 }
 
